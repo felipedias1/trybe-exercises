@@ -8,6 +8,7 @@
       h1{
         width: 65px;
         color: orange;
+        font-family: sans-serif;
       }
 
       #list-style{
@@ -18,17 +19,48 @@
         background-color: rgb(151, 133, 185);
       }
 
+      #p-style{
+        font-weight: 600;
+        width: 3em;
+        font-size: 3em;
+        font-style: italic;
+        text-align: center;
+        text-decoration: underline;
+      }
+
+      #l1{
+        background-color: rgb(251, 255, 0);
+      }
+
+      #l2{
+        background-color: rgb(255, 0, 0);
+      }
+
+      #l3{
+        background-color: brown;
+      }
+
     </style>
   </head>
   <body>
     <h1>Exercícios 3.2</h1>
-    <p class="first-style">Qual é a sua cor favorita?</p>
+    <p id="p-style" class="first-style">Qual é a sua cor favorita?</p>
     <ul id="list-style"  class="first-style">
-      <li>Amarelo</li>
-      <li>Vermelho</li>
-      <li>Marrom</li>
+      <li id="l1">Amarelo</li>
+      <li id="l2">Vermelho</li>
+      <li id="l3">Marrom</li>
     </ul>
 
+
+    <!-- Exercícios da parte 2
+ - Modifique o família do h1 para sans-serif
+ - Deixe o parágrafo com o font-weight 600
+ - Modifique o font-size do body para 16px
+ - Coloque o tamanho do parágrafo com o tamanho de 3 vezes o padrão do body
+ - Explore as propriedades font-style, line-height, text-align e text-decoration
+ - Troque a cor de fundo de cada item da lista para a cor correspondente ao texto
+    -->
+    
     <!-- Exercícios da parte 1
  - Modifique o tamanho do h1 para 65 pixels
  - Modifique a cor do texto do h1 para laranja
