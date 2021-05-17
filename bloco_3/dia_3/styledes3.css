@@ -1,0 +1,15 @@
+.center{
+    text-align: center;
+}
+
+li:hover{
+    background-color: rgba(212, 0, 255, 0.486);
+}
+
+li:active{
+    color: blue;
+}
+
+ul, ol {
+    list-style: none;
+}
