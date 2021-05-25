@@ -26,3 +26,4 @@ function traduzRomanos(myArray) {
 return num;
 }
 console.log(traduzRomanos(testeArray));
+

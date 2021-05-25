@@ -1,4 +1,4 @@
-let testeArray = [2, 3, 2, 5, 8, 2, 3];
+let testeArray = [2, 10, 15, 15, 15, 12, 20];
 
 function maisCaracteres(myArray) {
     
@@ -9,8 +9,8 @@ function maisCaracteres(myArray) {
       
     for(i = 0; i < myArray.length; i += 1) {
     numAtual = myArray[i];
-      for(i = 0; i < myArray.length; i += 1) {
-        if(numAtual == myArray[i]) {
+      for(j = 0; j < myArray.length; j += 1) {
+        if(numAtual == myArray[j]) {
           contUm += 1;
         };
       };
