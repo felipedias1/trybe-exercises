@@ -1,4 +1,4 @@
-let testeArray = [2, 10, 15, 15, 15, 12, 20];
+let testeArray = [2, 2, 3, 3, 4, 4, 5, 5];
 
 function maisCaracteres(myArray) {
     
@@ -15,7 +15,7 @@ function maisCaracteres(myArray) {
         };
       };
       
-      if (contUm > contDois) {
+      if (contUm >= contDois) {
         maisVezes = numAtual;
         contDois = contUm;
       };
