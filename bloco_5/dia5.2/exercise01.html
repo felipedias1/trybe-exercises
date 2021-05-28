@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      
+      let titulo = document.createElement('h1');
+      titulo.innerText = 'Exercício 5.2 - JavaScript DOM';
+      document.querySelector('body').appendChild(titulo);
+      titulo.className = "title";
+      
+        let container = document.createElement('div');
+        container.className = 'main-content';
+        container.style.backgroundColor = "green";
+        document.querySelector('body').appendChild(container);
+      
+          let divSonOne = document.createElement('div');
+          divSonOne.className = 'center-content';
+          document.querySelector('.main-content').appendChild(divSonOne);
+      
+            let divGrandSonOne = document.createElement('p');
+            divGrandSonOne.innerText = 'Felipe Ferreira Dias - searching like a dev!';
+            document.querySelector('.center-content').appendChild(divGrandSonOne);
+
+          let divSonTwo = document.createElement('div');
+          divSonTwo.className = 'left-content';
+          document.querySelector('.main-content').appendChild(divSonTwo);
+
+           //let removeElementFather = divSonTwo.parentNode;
+           //let removeElementSon = divSonTwo
+           //removeElementFather.removeChild(divSonTwo);
+
+          // removeElementOne.removeChild(1);
+
+          //document.querySelector('.main-content'[1]).removeChild(divSonTwo);
+
+            let divGrandSonTwo = document.createElement('image');
+            divGrandSonTwo.className = 'small-image';
+            document.getElementsByClassName('.small-image').src="https://picsum.photos/200";
+            divGrandSonTwo.innerText = 'small-image';
+            document.querySelector('.left-content').appendChild(divGrandSonTwo);
+        
+          let divSonThree = document.createElement('div');
+          divSonThree.className = 'right-content';
+          divSonThree.style.marginRight = "auto";
+          document.querySelector('.main-content').appendChild(divSonThree);
+
+            let divGrandSonthree = document.createElement('ul');            
+            document.querySelector('.right-content').appendChild(divGrandSonthree);
+
+            for (let i = 1; i <= 10; i += 1) {
+              let number = document.createElement('li');
+              number.innerText = i
+              document.querySelector('ul').appendChild(number);
+                if (i >= 8 ) {
+                document.querySelector('.main-content').removeChild(number);
+              }
+            }
+            
+            document.querySelector('ul').removeChild([9]);
+            
+         
+        
+        for (let i = 0; i <3; i += 1) {
+          let subtitle = document.createElement('h3');
+          subtitle.innerText = 'TESTE';
+          subtitle.className = "description";
+          document.querySelector('.main-content').appendChild(subtitle); 
+          }       
+    </script>
+  </body>
+</html>
