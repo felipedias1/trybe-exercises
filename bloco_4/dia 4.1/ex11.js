@@ -1,4 +1,4 @@
-let salarioBruto = 6000;
+let salarioBruto = 3000;
 let descontoInss;
 let salarioMenosInss;
 let descontoIr;
