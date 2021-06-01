@@ -68,3 +68,7 @@ body {
   .tech {
     transform: translateY(-20px);
   }
+
+  .notech {
+    transform: translateY(+20px);
+  }
