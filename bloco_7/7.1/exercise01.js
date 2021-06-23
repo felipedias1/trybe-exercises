@@ -8,3 +8,7 @@ const testingScope = escopo => {
   }
 }
 testingScope(true);
+
+const abc = [1,2,3]
+
+console.log(typeof abc)
