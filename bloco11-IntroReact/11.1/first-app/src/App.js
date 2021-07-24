@@ -1,5 +1,6 @@
 import './App.css';
-import './Component.js';
+import Component from './Component.js';
+import React from 'react';
 
 function App() {
   return (
