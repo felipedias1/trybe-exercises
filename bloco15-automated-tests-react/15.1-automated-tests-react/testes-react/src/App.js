@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/App.js</code> and save too reload.
         </p>
         <a
           className="App-link"
@@ -18,7 +18,7 @@ function App() {
           Learn React
         </a>
         <label htmlFor="id-email">
-        Email
+        Email  
       </label>
       <input id="id-email" type="email" />
       <input id="btn-send" type="button" data-testid="id-send" value="Enviar" />
