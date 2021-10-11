@@ -1,7 +1,7 @@
 Felipe
 
-- [ ] Teste 1
-- [ ] Teste 2
-- [ ] Teste 3
-- [ ] Teste 4
+- [x] Teste 1
+- [x] Teste 2
+- [x] Teste 3
+- [x] Teste 4
 
