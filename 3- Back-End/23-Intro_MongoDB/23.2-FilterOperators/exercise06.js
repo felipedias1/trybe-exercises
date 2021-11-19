@@ -1,0 +1,1 @@
+db.superheroes.find({ "aspects.height": { $gte: 200}}).count();
